@@ -28,11 +28,11 @@ function setup() {
     bob3=new Bob(350,500);
     bob4=new Bob(300,500);
 
-    rope=new Rope(bob.body,roof.body,0,300);
-    rope1=new Rope(bob3.body,roof.body,-50,300);
-    rope2=new Rope(bob2.body,roof.body,100,300);
-    rope3=new Rope(bob4.body,roof.body,-100,300);
-    rope4=new Rope(bob1.body,roof.body,50,300);
+    rope=new Rope(bob.body,roof.body,0,00);
+    rope1=new Rope(bob3.body,roof.body,-50,00);
+    rope2=new Rope(bob2.body,roof.body,100,00);
+    rope3=new Rope(bob4.body,roof.body,-100,00);
+    rope4=new Rope(bob1.body,roof.body,50,00);
 
 
 
@@ -67,7 +67,7 @@ function draw() {
 function keyPressed(){
 
   if(keyCode === UP_ARROW){
-      Matter.Body.applyForce(bob4.body,bob4.body.position,{x:50,y:0});
+      Matter.Body.applyForce(bob4.body,bob4.body.position,{x:-50,y:0});
   }
 
 }
